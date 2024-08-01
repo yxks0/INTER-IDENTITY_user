@@ -1,0 +1,321 @@
+/* @media screen and (min-width: 767px) { */
+.introduction-section p,
+.variations-section p,
+.physical-integrity-container p,
+.discrimination-container p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.introduction-section img,
+.variations-section img,
+.physical-integrity-container img,
+.discrimination-container img {
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.introduction-section h1,
+.variations-section h1,
+.physical-integrity-container h1,
+.discrimination-container h1 {
+  font-size: 4.5rem;
+  color: var(--color-main-purple-1);
+  padding: 0;
+  margin: 0;
+}
+
+.main-header-section {
+  position: relative;
+  width: 100%;
+  /* width: calc(100vw - 10vw); Account for body's padding */
+  /* width: 98.7vw; */
+  /* margin-left: -11.45vw; */
+}
+
+.variations-section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.variations-section .btn-intersex-variations {
+  display: block;
+  background-color: var(--color-main-purple-2);
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.variations-section .btn-intersex-variations:hover {
+  background-color: gray;
+}
+
+.main-header-section .btn {
+  position: absolute;
+  background: transparent;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 5px 20vh 5px;
+  cursor: pointer;
+  border: 3px solid #fff;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-header-section .prev-btn {
+  bottom: 10px;
+  transform: rotate(180deg);
+}
+
+.main-header-section .next-btn {
+  bottom: 10px;
+  right: 0;
+}
+
+.main-header {
+  margin-top: 20px;
+  height: 50vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.header-img-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.header-img-container img {
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.indicator-container {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 5px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+.home-main .card-home {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-main .card-home .card-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main .card-home .card-top div .ln-1 {
+  font-size: 1.6rem;
+  line-height: 0.5;
+  font-weight: 500;
+  margin-left: 6px;
+  margin-bottom: 40px;
+}
+
+.home-main .card-home .card-top div .ln-2 {
+  font-size: 5rem;
+  color: purple;
+  line-height: 0;
+  font-weight: 700;
+  margin: 30px 0 30px 0;
+}
+
+.home-main .card-home .card-container {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main .card-home .card-left p {
+  text-indent: 5em;
+}
+
+.home-main .card-home img {
+  width: 51%;
+  height: 51%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.home-main .card-home .card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main .card-home .card-bottom video {
+  width: 90%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.home-main p:not(.cards-container p) {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.home-main .card-variation img {
+  width: 49%;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+/* ================================================================================================================================================= */
+section.intersex-ph-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section.intersex-ph-container h1 {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 4.5rem;
+}
+
+section.intersex-ph-container h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+section.intersex-ph-container p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* ================================================================================================================================================= */
+section.education-videos-container {
+  display: block;
+  width: 100%;
+}
+
+section.education-videos-container h1 {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 4.5rem;
+}
+
+section.education-videos-container .videos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+section.education-videos-container .videos-container .video-content {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+section.education-videos-container .videos-container .video-content iframe {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+section.education-videos-container .videos-container .video-content p {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* ================================================================================================================================================= */
+section.community-banner-container,
+section.news-banner-container,
+section.faq-banner-container {
+  display: block;
+  width: 100%;
+  margin-top: 100px;
+}
+
+section.community-banner-container img,
+section.news-banner-container img,
+section.faq-banner-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+section.community-banner-container p,
+section.news-banner-container p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+section.education-videos-container button,
+section.community-banner-container button,
+section.news-banner-container button,
+section.faq-banner-container button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: var(--color-main-purple-2);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+section.education-videos-container button:hover,
+section.community-banner-container button:hover,
+section.news-banner-container button:hover,
+section.faq-banner-container button:hover {
+  background-color: var(--color-main-gray-2);
+}
+
+/* ================================================================================================================================================= */

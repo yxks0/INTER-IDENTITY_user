@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interIdentity</title>
+    <link rel="icon" href="./../media/images/logo2.png" type="image/png" />
+    <link rel="stylesheet" href="./../css/root-style.css" />
+    <link rel="stylesheet" href="./../css/loader-style.css" />
+    <link rel="stylesheet" href="./../css/header-style.css" />
+    <link rel="stylesheet" href="./../css/footer-style.css" />
+
+    <!-- <link rel="stylesheet" href="./../css/articles-style.css" /> -->
+    <link rel="stylesheet" href="./../css/news-style-desktop.css" />
+  </head>
+  <body>
+    <div class="loader"></div>
+    <header id="header-container"></header>
+
+    <div class="main-container">
+      <h1 id="news">ARTICLES</h1>
+
+      <div class="news-main-container"></div>
+
+      <div class="news-nav-container">
+        <button id="prev-page"><< Previous Page</button>
+        <span id="page-buttons"></span>
+        <button id="next-page">Next Page >></button>
+      </div>
+    </div>
+
+    <section class="news-article">
+      <button class="btn-news-back" id="btn-news-back">Back</button>
+
+      <h1 id="news-title">Article Title</h1>
+
+      <div>
+        <img src="./../media/images/brook.jpg" alt="img" id="news-img" />
+        <p id="news-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          ullam reiciendis cumque laboriosam quia. Molestiae cumque, tenetur
+          ipsum aliquid beatae rem architecto quae fuga, voluptatum quam
+          eligendi veniam facere blanditiis. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nisi odio laboriosam nulla accusamus
+          sapiente earum molestiae voluptatum ipsa ipsam dolore debitis quia,
+          itaque facilis temporibus libero explicabo necessitatibus. Repellat,
+          nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+          aliquid cupiditate corporis et unde tempore libero repudiandae tenetur
+          iste tempora vero voluptates expedita eveniet id dolore excepturi,
+          sapiente cumque magni.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer-container"></footer>
+
+    <script src="./../js/header-script.js"></script>
+    <script src="./../js/loader-script.js"></script>
+    <script src="./../js/nav-script.js"></script>
+    <script src="./../js/footer-script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/login-checker-script.js" type="module"></script>
+    <script src="./../js/articles-script.js" type="module"></script>
+
+    <script>
+      document.addEventListener("headerLoaded", () => {
+        // const btnNav = document.querySelector(".menu-nav .btn-articles");
+        // btnNav.style.background = "rgba(0, 0, 0, 0.5)";
+        // btnNav.style.color = "white";
+        document.querySelector(".header-nav .btn-articles").style.color =
+          "var(--color-main-purple-2)";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interIdentity</title>
+    <link rel="icon" href="./../media/images/logo2.png" type="image/png" />
+    <link rel="stylesheet" href="./../css/root-style.css" />
+    <link rel="stylesheet" href="./../css/loader-style.css" />
+    <link rel="stylesheet" href="./../css/header-style.css" />
+    <link rel="stylesheet" href="./../css/footer-style.css" />
+
+    <link rel="stylesheet" href="./../css/community-poll-style.css" />
+    <link rel="stylesheet" href="./../css/community-style-desktop.css" />
+    <link rel="stylesheet" href="./../css/community-style-mobile.css" />
+
+    <script src="./../js/login-checker-script.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div class="loader"></div>
+    <header id="header-container"></header>
+
+    <div id="landing-container">
+      <div>
+        <div>
+          <h1>
+            Discover, Connect, and Empower:
+            <br />
+            Join the Community Today!
+          </h1>
+
+          <button class="btn-join-community">Join Now!</button>
+        </div>
+
+        <img
+          src="./../media/images/11- BANNER/community (1).png"
+          alt="img"
+          style="width: 30vw"
+        />
+      </div>
+
+      <h2 style="text-align: justify">
+        Welcome to interIdentity, a dedicated space for the intersex community
+        and its allies. Here, we celebrate diversity, promote understanding, and
+        foster a supportive environment where every voice is heard and
+        respected. Whether you're here to learn, connect, or share your story,
+        you're warmly welcomed. Together, let's explore the complexities,
+        challenges, and triumphs of being intersex in today's world. Join us in
+        advocating for inclusivity and raising awareness about intersex issues.
+        Welcome to a community that embraces you as you are.
+      </h2>
+    </div>
+
+    <main id="main-container">
+      <div class="add-container">
+        <div class="add-btn-container">
+          <button class="btn-add-blog"></button>
+          <button class="btn-add-story"></button>
+          <button class="btn-add-poll"></button>
+        </div>
+
+        <button class="btn-add"></button>
+      </div>
+
+      <div class="container">
+        <div class="community-nav-container">
+          <a href="#" class="btn-community-profile">Profile</a>
+          <a href="#" class="btn-blogs" title="Blogs">Blogs</a>
+          <a href="#" class="btn-story" title="Stories">Stories</a>
+          <a href="#" class="btn-polls">Polls</a>
+        </div>
+
+        <div class="insert-post-overlay"></div>
+        <div class="insert-post-container">
+          <div class="insert-post-top">
+            <h3 style="color: #000">NEW BLOG</h3>
+            <span class="btn-post-close">&times;</span>
+          </div>
+
+          <div class="insert-post-bottom">
+            <div style="display: flex">
+              <img
+                src="./../media/images/default-profile.png"
+                class="post-user-profile"
+              />
+              <textarea
+                id="inp-insert-post"
+                class="inp-insert-post"
+                placeholder="What's on your mind?"
+                required
+              ></textarea>
+            </div>
+
+            <div class="uploaded-img-container">
+              <input
+                type="file"
+                id="inp-insert-img-post"
+                class="inp-insert-img-post"
+                accept="image/*"
+                multiple
+              />
+              <div class="preview-container"></div>
+            </div>
+
+            <button class="btn-insert-post" type="submit">Post</button>
+          </div>
+        </div>
+
+        <div class="insert-story-overlay"></div>
+        <div class="story-post-container">
+          <div class="story-post-top">
+            <h3 style="color: #000">Submit a Story</h3>
+            <span class="btn-post-close">&times;</span>
+          </div>
+
+          <div class="story-post-bottom">
+            <div style="display: flex">
+              <img
+                src="./../media/images/default-profile.png"
+                class="post-user-profile"
+              />
+              <div class="input-field-container">
+                <input
+                  type="text"
+                  id="inp-story-title"
+                  class="inp-story-title"
+                  placeholder="Story Title"
+                />
+                <textarea
+                  id="inp-story-content"
+                  class="inp-story-content"
+                  placeholder="Share your story with us..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button class="btn-story-post" type="submit">Post</button>
+          </div>
+        </div>
+
+        <div class="insert-poll-overlay"></div>
+        <div class="poll-post-container">
+          <div class="poll-post-top">
+            <h3 style="color: #000">Create a Poll</h3>
+            <span class="btn-poll-close">&times;</span>
+          </div>
+
+          <div class="poll-post-bottom">
+            <div>
+              <input
+                type="text"
+                id="poll-inp-question"
+                placeholder="Ask a Question"
+              />
+            </div>
+
+            <div id="options-container">
+              <div class="option-input">
+                <input
+                  type="text"
+                  placeholder="Poll option"
+                  class="poll-inp-option"
+                />
+              </div>
+
+              <div class="option-input">
+                <input
+                  type="text"
+                  placeholder="Poll option"
+                  class="poll-inp-option"
+                />
+              </div>
+            </div>
+            <button id="add-option-btn">Add option...</button>
+
+            <button class="btn-poll-post" type="submit">Post</button>
+          </div>
+        </div>
+
+        <div class="community-profile-container">
+          <div class="community-profile-header">
+            <div>
+              <img src="" alt="img" id="community-profile-img" />
+
+              <div>
+                <h1 id="community-profile-name"></h1>
+                <p id="community-profile-location"></p>
+                <p id="community-profile-contact"></p>
+              </div>
+            </div>
+
+            <button id="btn-community-profile-edit">Edit Profile</button>
+          </div>
+
+          <div class="community-profile-nav">
+            <a href="#" id="community-profile-posts">Posts</a>
+            <a href="#" id="community-profile-pending">Pending</a>
+          </div>
+        </div>
+
+        <div class="card-container"></div>
+
+        <div class="story-card-container"></div>
+
+        <div class="poll-card-container"></div>
+      </div>
+    </main>
+
+    <footer class="footer-container"></footer>
+    <script src="./../js/header-script.js"></script>
+    <script src="./../js/loader-script.js"></script>
+    <script src="./../js/nav-script.js"></script>
+    <script src="./../js/footer-script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/Community-Script.js" type="module" defer></script>
+  </body>
+</html>

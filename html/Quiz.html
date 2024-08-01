@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interIdentity</title>
+    <link rel="icon" href="./../media/images/logo2.png" type="image/png" />
+    <link rel="stylesheet" href="./../css/root-style.css" />
+    <link rel="stylesheet" href="./../css/loader-style.css" />
+    <link rel="stylesheet" href="./../css/header-style.css" />
+    <link rel="stylesheet" href="./../css/footer-style.css" />
+
+    <link rel="stylesheet" href="./../css/Quiz-Style.css" />
+  </head>
+  <body>
+    <div class="loader"></div>
+    <header id="header-container"></header>
+
+    <main class="main-container">
+      <section class="landing-container">
+        <div>
+          <div>
+            <h1>Intersex Awareness Quizzes</h1>
+            <h3>Test Your Knowledge and Support Understanding</h3>
+            <p>
+              Welcome to our Intersex Awareness Quizzes! These quizzes are
+              designed to help you learn more about intersex - a natural
+              variation in human biology that challenges traditional ideas about
+              sex and gender.
+              <br /><br />
+              Why Quiz About Intersex? Intersex is often misunderstood or
+              overlooked in mainstream discussion about gender and sexuality.
+              These Quizzes aim to raise awareness, educate, and promote
+              understanding of intersex identities and experiences.
+            </p>
+          </div>
+          <img src="./../media/images/11- BANNER/qUIZ.png" alt="img" />
+        </div>
+
+        <p>
+          Join Us in Embracing Diversity: By taking these quizzes, you're taking
+          a step towards creating a more inclusive and respectful world for all
+          genders and identities.
+        </p>
+        <div class="z" style="justify-content: flex-end">
+          <button class="btn-landing-next">Next</button>
+        </div>
+      </section>
+
+      <section class="choose-topic-container">
+        <div class="z">
+          <button class="btn-choose-topic-back">Back</button>
+        </div>
+
+        <div class="container">
+          <h1>Choose a topic</h1>
+          <button class="btn-intersex" data-topic="intersex">
+            What is intersex?
+          </button>
+          <button class="btn-myths" data-topic="myths">
+            Myths and Misconceptions
+          </button>
+          <button class="btn-variation" data-topic="variations">
+            Common Variations
+          </button>
+        </div>
+      </section>
+
+      <section class="topic-section">
+        <div class="z">
+          <button class="btn-topic-back">Back</button>
+        </div>
+
+        <div class="container">
+          <h1>TOPIC: <span id="topic-title-1">What is Intersex</span></h1>
+
+          <p>
+            If you haven't yet had the chance to watch our video on "<span
+              id="topic-text"
+              >Introduction to Intersex</span
+            >," we highly recommend taking a moment to do so. This video provide
+            a clear and insightful introduction to the topic of intersex,
+            exploring the natural variations in human biology that challenge
+            traditional notion of sex and gender.
+          </p>
+
+          <div class="video-container">
+            <iframe src="" id="topic-video"></iframe>
+            <p>Watch Video</p>
+          </div>
+
+          <p>
+            After watching the video, you'll have a solid foundation to engage
+            with our quizzes effectively. Test your knowledge, challenge
+            misconceptions, and deepen your understanding of intersex identities
+            and experiences.
+          </p>
+
+          <div class="z">
+            <a class="btn-done-watching">Done watching >></a>
+          </div>
+        </div>
+
+        <div class="topic-overlay"></div>
+        <div class="finish-video-container">
+          <div class="z">
+            <a class="btn-close-finish">&#10006;</a>
+          </div>
+
+          <p>
+            Congratulations on finishing the "<span id="topic-title-2"
+              >What is Intersex</span
+            >" video! You've taken an important step towards understanding
+            Intersex. <br /><br />
+            Now that you have a solid grasp of the basics, it's time to put your
+            knowledge to the test with our interactive quiz! Whether you're here
+            to challenge yourself or explore new perspective, our quizzes are
+            designed to engage and educate.
+          </p>
+
+          <button class="btn-take-quiz">Take Quiz</button>
+        </div>
+      </section>
+
+      <section class="begin-quiz">
+        <div class="z">
+          <button class="btn-begin-quiz-back">Back</button>
+        </div>
+
+        <h1>Are You Ready?</h1>
+        <p>
+          Click below to begin the quiz and discover more about intersex.
+          <br />Thank you for taking the initiative to learn and grow with us!
+        </p>
+
+        <button class="btn-begin-quiz">Begin Quiz</button>
+      </section>
+
+      <section class="quiz-section">
+        <div class="question-container">
+          <h1 class="number" id="number"></h1>
+          <h1 class="question" id="question"></h1>
+        </div>
+
+        <div class="choices-container">
+          <div class="choices-content" id="choice-1">
+            <p class="choice-letter" id="span1">a.</p>
+            <p class="choice-text"></p>
+          </div>
+
+          <div class="choices-content" id="choice-2">
+            <p class="choice-letter" id="span2">b.</p>
+            <p class="choice-text"></p>
+          </div>
+
+          <div class="choices-content" id="choice-3" style="display: block">
+            <p class="choice-letter" id="span3">c.</p>
+            <p class="choice-text"></p>
+          </div>
+
+          <div class="choices-content" id="choice-4" style="display: block">
+            <p class="choice-letter" id="span4">d.</p>
+            <p class="choice-text"></p>
+          </div>
+        </div>
+
+        <div class="answer-container">
+          <div class="correct-answer" id="correct-answer" style="display: none">
+            <p>
+              <span class="correct-text">Correct!</span>
+              <span class="correct-content"></span>
+            </p>
+          </div>
+
+          <div
+            class="incorrect-answer"
+            id="incorrect-answer"
+            style="display: none"
+          >
+            <p>
+              <span class="incorrect-text">Incorrect.</span>
+              <span class="incorrect-content"></span>
+            </p>
+          </div>
+        </div>
+
+        <button class="btn-submit-continue">Submit Answer</button>
+      </section>
+
+      <section class="quiz-result">
+        <h1>QUIZ RESULTS</h1>
+        <hr />
+        <h1>
+          Your total score: <span id="total-score"></span> out of
+          <span id="total-item"></span>
+        </h1>
+        <button class="btn-take-other-quizzes">Take Other Quizzes</button>
+      </section>
+    </main>
+
+    <footer class="footer-container"></footer>
+    <script src="./../js/header-script.js"></script>
+    <script src="./../js/loader-script.js"></script>
+    <script src="./../js/nav-script.js"></script>
+    <script src="./../js/footer-script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/login-checker-script.js" type="module" defer></script>
+    <script src="./../js/Quiz-Script.js" type="module" defer></script>
+  </body>
+</html>

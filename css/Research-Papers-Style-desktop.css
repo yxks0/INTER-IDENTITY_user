@@ -1,0 +1,90 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 100px;
+}
+
+.main-container #research-papers {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--color-main-purple-1);
+  margin-top: 0;
+}
+
+.papers-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100%;
+}
+
+.papers-container .papers-content {
+  width: 80%;
+  height: 350px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.papers-content h1 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  height: 70px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+}
+
+.papers-content .author-text {
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  overflow: hidden;
+  word-break: normal;
+}
+
+.papers-content .papers-text {
+  padding: 0;
+  margin: 30px 0 0 0;
+  max-height: 172px;
+  overflow: hidden;
+  word-break: normal;
+  text-align: justify;
+}
+
+.papers-content .btn-download {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+
+  padding: 5px;
+  background-color: var(--color-main-purple-2);
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.papers-content .btn-download:hover {
+  background-color: var(--color-main-gray-2);
+}
+
+.papers-nav-container {
+  margin: 20px 0;
+}
+
+.papers-nav-container button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin: 0 5px;
+}
