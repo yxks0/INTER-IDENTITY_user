@@ -54,6 +54,11 @@ html {
   padding: 0 4vw;
 }
 
+main,
+.main-container {
+  padding-top: 4rem;
+}
+
 * {
   font-family: var(--font-style-title);
 }

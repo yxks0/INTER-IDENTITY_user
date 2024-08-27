@@ -10,16 +10,24 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 20vw);
+  background-color: #fff;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  padding: 0 10px;
-  margin-bottom: 20px;
+  padding: 10px 10px;
+  z-index: 1000;
 }
 
 header .logo-img {
-  width: 5em;
+  height: 4em;
+  width: 4em;
+  object-fit: cover;
+  object-position: center;
 }
 
 header .header-nav img {
